@@ -1,11 +1,15 @@
-/* General */
+/* ===== General ===== */
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
   font-size: 120%;
   margin: 0;
 }
 
-/* Skip link */
+/* ===== Skip link ===== */
 .skip-link {
   position: absolute;
   left: -999px;
@@ -19,9 +23,10 @@ body {
   color: #fff;
   padding: 10px;
   z-index: 100;
+  text-decoration: none;
 }
 
-/* Header & Nav */
+/* ===== Header & Nav ===== */
 header {
   background-color: #2c3e50;
   padding: 15px;
@@ -32,6 +37,7 @@ nav ul {
   justify-content: space-around;
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 nav a {
@@ -49,9 +55,18 @@ nav a.current {
 h1 {
   text-align: center;
   color: white;
+  margin-top: 15px;
 }
 
-/* Flex gallery */
+/* ===== Hero image ===== */
+.hero-img {
+  display: block;
+  max-width: 300px;
+  margin: 20px auto;
+  border-radius: 12px;
+}
+
+/* ===== Flex gallery ===== */
 .flex-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -63,14 +78,14 @@ h1 {
 .flex-gallery img {
   width: 200px;
   border-radius: 10px;
-  transition: transform 0.3s;
+  transition: transform 0.3s ease;
 }
 
 .flex-gallery img:hover {
   transform: scale(1.05);
 }
 
-/* Footer */
+/* ===== Footer ===== */
 footer {
   background-color: #2c3e50;
   color: white;
@@ -80,11 +95,5 @@ footer {
 
 footer a {
   color: #1abc9c;
-
-}
-.hero-img {
-  display: block;
-  max-width: 300px;
-  margin: 20px auto;
-  border-radius: 12px;
+  text-decoration: underline;
 }
