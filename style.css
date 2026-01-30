@@ -1,15 +1,15 @@
-/* ===== General ===== */
+/* ===== GENERAL ===== */
 * {
   box-sizing: border-box;
 }
 
 body {
   font-family: Arial, sans-serif;
-  font-size: 120%;
   margin: 0;
+  font-size: 120%;
 }
 
-/* ===== Skip link ===== */
+/* ===== SKIP LINK ===== */
 .skip-link {
   position: absolute;
   left: -999px;
@@ -19,17 +19,29 @@ body {
 .skip-link:focus {
   left: 10px;
   top: 10px;
-  background: #000;
-  color: #fff;
+  background: black;
+  color: white;
   padding: 10px;
   z-index: 100;
-  text-decoration: none;
 }
 
-/* ===== Header & Nav ===== */
+/* ===== HEADER & NAV ===== */
 header {
-  background-color: #2c3e50;
+  background-color: #ddd;
   padding: 15px;
+}
+
+/* COMMENTED OUT FROM HW1 */
+/*
+li {
+  list-style-type: none;
+  display: inline;
+}
+*/
+
+nav {
+  display: inline-block;
+  width: 80%;
 }
 
 nav ul {
@@ -37,63 +49,58 @@ nav ul {
   justify-content: space-around;
   list-style-type: none;
   padding: 0;
-  margin: 0;
 }
 
 nav a {
-  color: white;
   text-decoration: none;
+  color: purple;
   font-weight: bold;
 }
 
-nav a:hover,
 nav a.current {
-  color: #1abc9c;
   text-decoration: underline;
 }
 
+/* DESCENDANT SELECTOR */
+nav img {
+  width: 10%;
+  position: relative;
+  top: 20px;
+}
+
+/* ===== HEADINGS ===== */
 h1 {
   text-align: center;
-  color: white;
-  margin-top: 15px;
+  font-style: italic;
 }
 
-/* ===== Hero image ===== */
-.hero-img {
-  display: block;
-  max-width: 300px;
-  margin: 20px auto;
-  border-radius: 12px;
+/* ===== GRID (NEIGHBORHOOD) ===== */
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: center;
+  row-gap: 20px;
 }
 
-/* ===== Flex gallery ===== */
-.flex-gallery {
+/* ONLY IMAGES INSIDE GRID */
+.grid img {
+  width: 100%;
+}
+
+/* ===== FLEX (PARKS) ===== */
+.flex {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
   justify-content: center;
-  padding: 20px;
+  gap: 20px;
 }
 
-.flex-gallery img {
-  width: 200px;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
+.flex img {
+  width: 300px;
 }
 
-.flex-gallery img:hover {
-  transform: scale(1.05);
-}
-
-/* ===== Footer ===== */
+/* ===== FOOTER ===== */
 footer {
-  background-color: #2c3e50;
-  color: white;
-  text-align: center;
-  padding: 15px;
-}
-
-footer a {
-  color: #1abc9c;
-  text-decoration: underline;
+  background-color: #ddd;
+  padding: 10px;
 }
