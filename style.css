@@ -80,4 +80,11 @@ footer {
 
 footer a {
   color: #1abc9c;
+
+}
+.hero-img {
+  display: block;
+  max-width: 300px;
+  margin: 20px auto;
+  border-radius: 12px;
 }
